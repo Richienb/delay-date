@@ -1,9 +1,13 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-	if (typeof input !== "string") {
-		throw new TypeError(`Expected a string, got ${typeof input}`)
+const delay = require("delay")
+
+module.exports = async date => {
+	const waitTime = new Date(date).getTime() - Date.now()
+
+	if (waitTime < 0) {
+		throw new Error("Can not wait for a date in the past!")
 	}
 
-	return `${input} & ${postfix}`
+	await delay(waitTime)
 }

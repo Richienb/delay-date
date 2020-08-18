@@ -1,15 +1,19 @@
 /**
-My awesome module.
-@param input Lorem ipsum.
-@param postfix Lorem ipsum.
+Delay a promise until a specified date.
+@param date The date to wait for.
 @example
 ```
-const theModule = require("the-module");
+const addTime = require("add-time");
+const delayDate = require("delay-date");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+bar();
+
+await delayDate(addTime.now({ seconds: 1 }));
+
+// Executed a second later
+baz();
 ```
 */
-declare function theModule(input: string, { postfix }: { postfix?: string }): string
+declare function delayDate(date: Date | string | number): Promise<void>
 
-export = theModule
+export = delayDate

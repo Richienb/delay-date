@@ -1,8 +1,8 @@
 {
-	"name": "the-module",
+	"name": "delay-date",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Delay a promise until a specified date.",
+	"repository": "https://github.com/Richienb/delay-date.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
 	"main": "index.js",
@@ -17,11 +17,22 @@
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"date",
+		"delay",
+		"math",
+		"timeout",
+		"promise"
+	],
+	"dependencies": {
+		"delay": "^4.4.0"
+	},
 	"devDependencies": {
+		"add-time": "^1.0.0",
 		"ava": "^3.11.1",
 		"eslint-config-richienb": "^0.4.2",
+		"in-range": "^2.0.0",
+		"time-span": "^4.0.0",
 		"xo": "^0.33.0"
 	},
 	"xo": {

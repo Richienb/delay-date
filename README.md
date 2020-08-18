@@ -1,41 +1,35 @@
-# the-module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# delay-date [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/delay-date/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/delay-date)
 
-My awesome module.
+Delay a promise until a specified date.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/delay-date.png)](https://npmjs.com/package/delay-date)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install delay-date
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const addTime = require("add-time");
+const delayDate = require("delay-date");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+bar();
+
+await delayDate(addTime.now({ seconds: 1 }));
+
+// Executed a second later
+baz();
 ```
 
 ## API
 
-### theModule(input, options?)
+### delayDate(date)
 
-#### input
+#### date
 
-Type: `string`
+Type: `Date | string | number`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The date to wait for.
