@@ -1,6 +1,6 @@
 {
 	"name": "delay-date",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Delay a promise until a specified date.",
 	"repository": "https://github.com/Richienb/delay-date.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
